@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* كمل باقي الستايل بتاعك هنا يا موسكو */
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 10, 10;
+  --background-end-rgb: 0, 0, 0;
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 10, 10;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: 'Inter', sans-serif; /* خط نضيف للمطورين */
+}
+
+/* ستايل خاص بيك يا موسكو للأزرار أو الكروت */
+.card-hover {
+  @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(255,204,0,0.3)];
+}
